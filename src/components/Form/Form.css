@@ -95,6 +95,10 @@
   background-color: #2F2F2F;
 }
 
+.form__input:focus {
+  background-color: #4285F4;
+}
+
 @media screen and (max-width: 1023px) {
   .form__container {
     padding-top: 232px;
