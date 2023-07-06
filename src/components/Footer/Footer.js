@@ -9,22 +9,22 @@ function Footer() {
       </h3>
       <div className='footer__container'>
         <p className='footer__copyright'>&copy; {new Date().getFullYear()}</p>
-        <a
-          href='https://practicum.yandex.ru'
-          className='footer__link'
-          target='_blank'
-          rel='noreferrer'
-        >
-          Яндекс.Практикум
-        </a>
-        <a
-          href='https://github.com/'
-          className='footer__link'
-          target='_blank'
-          rel='noreferrer'
-        >
-          Github
-        </a>
+          <a
+            href='https://practicum.yandex.ru'
+            className='footer__link'
+            target='_blank'
+            rel='noreferrer'
+          >
+            Яндекс.Практикум
+          </a>
+          <a
+            href='https://github.com/'
+            className='footer__link'
+            target='_blank'
+            rel='noreferrer'
+          >
+            Github
+          </a>
       </div>
     </footer>
   );

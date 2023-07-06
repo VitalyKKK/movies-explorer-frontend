@@ -8,7 +8,7 @@ function Login() {
       title='Рады видеть!'
       buttonText='Войти'
       question='Еще не зарегистрированы?'
-      linkText=' Регистрация'
+      linkText='Регистрация'
       link='/signup'
     >
       <label className='form__field'>E-mail</label>
@@ -17,6 +17,7 @@ function Login() {
         className='form__input'
         id='email-input'
         type='email'
+        placeholder='email'
         required
       />
       <span className='form__input-error'></span>
@@ -26,6 +27,7 @@ function Login() {
         className='form__input'
         id='password-input'
         type='password'
+        placeholder='Введите пароль'
         required
       />
       <span className='form__input-error'></span>

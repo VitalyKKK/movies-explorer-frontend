@@ -29,7 +29,7 @@ function Header(props) {
             <img src={logo} alt='логотип' />
           </Link>
           <nav>
-            <ul className='header__button-container_films'>
+            <ul className='header__button-films'>
               <li>
                 <NavLink to='/movies' className='header__button'>
                   Фильмы

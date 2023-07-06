@@ -26,13 +26,13 @@
   }
 
   .menu__container {
-    width: 530px;
+    width: 520px;
     height: 100%;
     background-color: #202020;
     position: fixed;
     right: 0;
     box-sizing: border-box;
-    padding: 0 0 90px;
+    padding: 0 0 55px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,9 +46,13 @@
     height: 24px;
     background-color: transparent;
     position: absolute;
-    top: 30px;
+    top: 20px;
     right: 30px;
     cursor: pointer;
+  }
+
+  .menu__close-icon:hover {
+    opacity: 0.6;
   }
 
   .menu__list {
@@ -96,9 +100,11 @@
 
   .menu__list {
     margin: 144px 0 0 0;
+    /* justify-content: space-evenly; */
   }
 
   .menu__close-icon {
-    right: 20px;
+    top: 14px;
+    right: 21px;
   }
 }

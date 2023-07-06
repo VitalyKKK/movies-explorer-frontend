@@ -2,6 +2,7 @@ import React from 'react';
 import './Profile.css';
 import Header from '../Header/Header';
 import BurgerMenu from '../BurgerMenu/BurgerMenu';
+import { Link } from 'react-router-dom';
 
 function Profile(props) {
   const { handleMenuClick, menuOpen, closePopups } = props;
@@ -11,7 +12,7 @@ function Profile(props) {
       <BurgerMenu menuOpen={menuOpen} closePopups={closePopups} />
       <Header loggedIn={true} handleMenuClick={handleMenuClick} />
       <main className='profile__container'>
-        <h3 className='profile__title'>Привет, Виталий!</h3>
+        <h1 className='profile__title'>Привет, Виталий!</h1>
         <form id='form' className='profile__form'>
           <div className='profile__row'>
             <label className='profile__field'>Имя</label>
@@ -23,6 +24,7 @@ function Profile(props) {
               minLength='2'
               maxLength='40'
               defaultValue='Виталий'
+              placeholder='Имя'
               required
             />
             <span className='profile__input-error'></span>
@@ -36,6 +38,7 @@ function Profile(props) {
               id='email-input'
               type='email'
               defaultValue='pochta@yandex.ru'
+              placeholder='email'
               required
             />
             <span className='profile__input-error'></span>
@@ -46,12 +49,11 @@ function Profile(props) {
           >
             Редактировать
           </button>
-          <button
-            type='button'
+          <Link to='/'
             className='profile__button-logout profile__button'
           >
             Выйти из аккаунта
-          </button>
+          </Link>
         </form>
       </main>
     </section>

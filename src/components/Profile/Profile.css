@@ -33,7 +33,12 @@
   justify-content: space-between;
 }
 
+.profile__input:focus {
+  border-bottom: 1px #4285F4 solid;
+}
+
 .profile__field {
+  width: 50px;
   float: left;
   margin: 0;
   padding: 0;
@@ -46,6 +51,8 @@
 }
 
 .profile__input {
+  width: 100%;
+  max-width: 370px;
   color: #fff;
   margin: 0;
   padding: 0;
@@ -110,13 +117,13 @@
 
 
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 768px) {
   .profile__title {
     margin: 236px 0 96px;
   }
 
   .profile__button-save {
-    margin-top: 193px;
+    margin-top: 210px;
   }
 }
 
@@ -130,7 +137,7 @@
   }
 
   .profile__input {
-    width: 150px;
+    max-width: 350px;
   }
 
   .profile__button-save {

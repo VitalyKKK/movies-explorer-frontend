@@ -8,7 +8,7 @@ function Register() {
       title='Добро пожаловать!'
       buttonText='Зарегистрироваться'
       question='Уже зарегистрированы?'
-      linkText=' Войти'
+      linkText='Войти'
       link='/signin'
     >
       <label className='form__field'>Имя</label>
@@ -19,6 +19,7 @@ function Register() {
         type='text'
         minLength='2'
         maxLength='40'
+        placeholder='Имя'
         required
       />
       <span className='form__input-error'></span>
@@ -28,6 +29,7 @@ function Register() {
         className='form__input'
         id='email-input'
         type='email'
+        placeholder='email'
         required
       />
       <span className='form__input-error'></span>
@@ -37,6 +39,8 @@ function Register() {
         className='form__input'
         id='password-input'
         type='password'
+        placeholder='Введите пароль'
+        minLength='6'
         required
       />
       <span className='form__input-error'></span>

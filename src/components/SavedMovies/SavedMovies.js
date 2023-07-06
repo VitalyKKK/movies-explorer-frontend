@@ -13,8 +13,10 @@ function SavedMovies(props) {
     <section className='movies'>
       <BurgerMenu menuOpen={menuOpen} closePopups={closePopups} />
       <Header loggedIn={true} handleMenuClick={handleMenuClick} />
-      <SearchForm />
-      <MoviesCardList isLiked={isLiked} handleLikeClick={handleLikeClick} />
+      <main>
+        <SearchForm />
+        <MoviesCardList isLiked={isLiked} handleLikeClick={handleLikeClick} />
+      </main>
       <Footer />
     </section>
   );

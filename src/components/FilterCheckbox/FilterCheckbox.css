@@ -26,6 +26,10 @@
   appearance: none;
 }
 
+.filter__checkbox:hover {
+  opacity: 0.6;
+}
+
 .filter__checkbox::after {
   height: 8px;
   width: 8px;

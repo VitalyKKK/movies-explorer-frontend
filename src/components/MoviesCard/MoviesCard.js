@@ -10,7 +10,7 @@ function MoviesCard(props) {
     <>
       <li className='card'>
         <a href={trailerLink} target='_blank' rel='noreferrer'>
-          <img className='card__image' alt='постер к фильму' src={image1} />
+          <img className='card__image' alt='постер к фильму 33 слова о дизайне' src={image1} />
         </a>
         <div className='card__container'>
           <figcaption className='card__info-container'>
@@ -29,7 +29,7 @@ function MoviesCard(props) {
       </li>
       <li className='card'>
         <a href={trailerLink} target='_blank' rel='noreferrer'>
-          <img className='card__image' alt='постер к фильму' src={image2} />
+          <img className='card__image' alt='постер к фильму Киноальманах «100 лет дизайна»' src={image2} />
         </a>
         <div className='card__container'>
           <figcaption className='card__info-container'>
@@ -48,7 +48,7 @@ function MoviesCard(props) {
       </li>
       <li className='card'>
         <a href={trailerLink} target='_blank' rel='noreferrer'>
-          <img className='card__image' alt='постер к фильму' src={image3} />
+          <img className='card__image' alt='постер к фильму В погоне за Бенкси' src={image3} />
         </a>
         <div className='card__container'>
           <figcaption className='card__info-container'>

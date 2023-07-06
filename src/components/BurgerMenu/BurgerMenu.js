@@ -21,7 +21,7 @@ function BurgerMenu(props) {
           </li>
           <li className="menu__item">
             <NavLink to="/saved-movies" className='menu__link' >
-              Сохраненные фильмы
+              Сохранённые фильмы
             </NavLink>
           </li>
         </ul>
