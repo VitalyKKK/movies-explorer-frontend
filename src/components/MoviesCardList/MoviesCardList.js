@@ -3,10 +3,8 @@ import './MoviesCardList.css';
 import MoviesCard from '../MoviesCard/MoviesCard';
 
 function MoviesCardList(props) {
-  const { isLiked, handleLikeClick } = props;
-  const cards = Array.apply(null, Array(4)).map((elem, i) => {
-    return i;
-  });
+  const { isLiked, handleLikeClick, cards } = props;
+
   return (
     <section className='cards'>
       <ul className='cards__list'>
@@ -15,6 +13,7 @@ function MoviesCardList(props) {
             key={i}
             isLiked={isLiked}
             handleLikeClick={handleLikeClick}
+            card={card}
           />
         ))}
       </ul>

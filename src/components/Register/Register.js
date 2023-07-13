@@ -1,8 +1,30 @@
-import React from 'react';
+import { useState } from 'react';
 import '../Form/Form.css';
 import Form from '../Form/Form';
 
-function Register() {
+function Register({ handleRegister }) {
+
+  const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
+  const [password, setPassword] = useState('');
+
+  function handleChangeEmail(e) {
+      setEmail(e.target.value);
+  }
+
+  function handleChangeName(e) {
+    setName(e.target.value);
+}
+
+  function handleChangePassword(e) {
+      setPassword(e.target.value);
+  }
+
+  function handleSubmt(e) {
+      e.preventDefault();
+      handleRegister({ name, email, password });
+  }
+
   return (
     <Form
       title='Добро пожаловать!'
@@ -10,6 +32,7 @@ function Register() {
       question='Уже зарегистрированы?'
       linkText='Войти'
       link='/signin'
+      handleSubmt={handleSubmt}
     >
       <label className='form__field'>Имя</label>
       <input
@@ -21,6 +44,8 @@ function Register() {
         maxLength='40'
         placeholder='Имя'
         required
+        value={name}
+        onChange={handleChangeName}
       />
       <span className='form__input-error'></span>
       <label className='form__field'>E-mail</label>
@@ -31,6 +56,8 @@ function Register() {
         type='email'
         placeholder='email'
         required
+        value={email}
+        onChange={handleChangeEmail}
       />
       <span className='form__input-error'></span>
       <label className='form__field'>Пароль</label>
@@ -42,6 +69,8 @@ function Register() {
         placeholder='Введите пароль'
         minLength='6'
         required
+        value={password}
+        onChange={handleChangePassword}
       />
       <span className='form__input-error'></span>
     </Form>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Form.css';
 import logo from '../../images/logo.svg';
 
-function Form({ children, title, buttonText, question, linkText, link }) {
+function Form({ children, title, buttonText, question, linkText, link, handleSubmt }) {
   return (
 
     <div className='form-container'>
@@ -11,9 +11,9 @@ function Form({ children, title, buttonText, question, linkText, link }) {
         <img src={logo} alt='логотип' />
       </Link>
       <h1 className='form-container__title'>{title}</h1>
-      <form className='form' id='form'>
+      <form className='form' id='form' onSubmit={handleSubmt}>
         {children}
-        <button type='submit' className='form__button-save'>
+        <button type='submit' className='form__button-save' onSubmit={handleSubmt}>
           {buttonText}
         </button>
       </form>
